@@ -19,7 +19,7 @@ const Product = ({product, onHandleAddToCart}) => {
                         {product.name}
                     </Typography>
                     <Typography variant='h5' >
-                        {product.price.formatted_with_symbol}
+                        Rp {product.price.raw}
                     </Typography>
                 </div>
                 <Typography dangerouslySetInnerHTML={{ __html: product.description }}  variant='body2' color='textSecondary' />
